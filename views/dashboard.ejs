@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: aliceblue;
+    }
+    .container{
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        border: 1px solid black;
+        border-radius: 10%;
+        margin: 1rem 1rem ;
+        background-color: white;
+        padding: 0.5rem;
+        color: black; 
+    }
+    h1,h2,h3,h4,h5,h6{
+        margin: 0;
+    }
+    button{
+        cursor:pointer;
+    }
+    .update{
+        background-color:blue;
+    }
+    .delete{
+        background-color: red ;
+    }
+    .card-title{
+        color: blue;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    input{
+        padding: 0.5rem;
+    }
+    hr{
+        margin: 0.5rem
+    }
+</style>
+<body>
+    <h1>Inventory Management</h1>
+    <hr>
+    <form >   
+            <label for="bookTitle"> Book Title : </label>   
+            <input type="text" placeholder="Enter Book Title" name="bookTitle" required>  
+            <label for="bookPrice"> Book Price : </label>   
+            <input type="text" placeholder="Enter Book Price" name="bookPrice" required>  
+            <label for="bookAuther">Book Auther : </label>   
+            <input type="text" placeholder="Enter Book Auther" name="bookAuther" required>  
+            <label for="bookCategory">Book Category : </label>     
+            <input type="text" placeholder="Enter Book Category" name="bookCategory" required>  
+            <button id="add-book" >Add Book</button>      
+    </form> 
+    <hr>   
+    <div class="container" id="item-list">
+        <!-- <div class="card">
+            <div class="card-content">
+                <h2 class="card-title">Book Title</h2>
+                <h5>By Book Auther</h5>
+                <h4>Book Category</h4>
+                <p>$Book Price</p>
+            </div>
+            <div>
+                <button class="update">Update</button>
+                <button class="delete">Delete</button>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="/browser.js"> </script>
+</body>
+</html>
