@@ -43,13 +43,13 @@ const genrateJWTToken = (email) => {
       secure: true,
       service: "Gmail",
       auth: {
-        user: "kunalcharde1@gmail.com",
+        user: "pradhumn1507@gmail.com",
         pass: "wfarmidiswmhnrwd",
       },
     });
   
     const mailOptions = {
-      from: "kunalcharde1@gmail.com",
+      from: "pradhumn1507@gmail.com",
       to: email,
       subject: "Email verification for Library Manegement System",
       html: `Click <a href='http://localhost:8000/api/${token}'>Here</a>`,

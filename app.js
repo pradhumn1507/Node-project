@@ -16,7 +16,7 @@ const { isAuth } = require("./middlewares/isAuthmiddleware");
 const app = express();
 const SECRETKEY = "This is for jwt node";
 const PORT = process.env.PORT || 8000
-const MONGO_URI =   `mongodb+srv://kunal_1234:1234@cluster0.ukgdobk.mongodb.net/library_DB`
+const MONGO_URI =   `mongodb+srv://shellu:60892164@cluster0.nmna7re.mongodb.net/node_project`
 const saltRound = 9;
 const store = new mongoDbSession({
     uri: MONGO_URI,
